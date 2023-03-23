@@ -1,9 +1,12 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { decreaseCounter } from "./counterSlice";
 
-export const Subtract = ({ setCounter }) => {
+export const Subtract = () => {
+  const dispatch = useDispatch();
   return (
     <>
-      <button onClick={() => setCounter("-")}>-</button>
+      <button onClick={()=> dispatch(decreaseCounter())} >-</button>
     </>
   );
 };

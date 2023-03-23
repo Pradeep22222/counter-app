@@ -2,11 +2,11 @@ import React from 'react'
 import { Add } from './Add'
 import { Subtract } from './Subtract'
 
-export const Buttons = ({ setCounter }) => {
+export const Buttons = () => {
   return (
     <div>
-      <Subtract setCounter={setCounter}></Subtract>
-      <Add setCounter={setCounter}></Add>
+      <Subtract ></Subtract>
+      <Add ></Add>
     </div>
   );
 };
