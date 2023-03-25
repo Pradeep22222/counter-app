@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-    counter: 22,
-    sample:"ignore"
+  counter: 22,
 };
 const counterSlice = createSlice({
   name: "counter",
